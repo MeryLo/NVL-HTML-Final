@@ -1,0 +1,28 @@
+El proyecto consta de cuatro secciones y está estructurado de la siguiente manera:
+
+El contenido de cada sección está en su fichero asociado. Por ejemplo, la sección 'precios' le corresponde
+el fichero precios.html. Con excepcion de la seccion 'nosotros', que su fichero es el index.html.
+
+Todas las secciones o ficheros comparten la misma estructura de la cabecera. Se ha copiado y pegado la 
+misma maquetación correspondiente a la cabecera. Esto es para poder navegar entre las distintas secciones 
+utilizando el menu de navegación.
+
+El menu de navegación es una lista desordenada de enlaces con anclas cuyo links son los distintos ficheros de cada sección.
+
+Para el logo, utilicé una imagen a la cual se le agrego un nombre ficticio.
+
+Cada sección tiene su propio contenido. Este varía según el tema de la sección.
+
+Con relación al color elegido como tema del diseño he recurrido a una pagina: paletton.com, 
+para conseguir una paleta de colores con cierta armonía.
+
+Para la maquetación en general me he auxiliado de distintos recursos de css. Por ejemplo, 
+flexbox para la alineacion de elementos o bloques de texto. Tambien he usado posicionamiento absoluto,
+donde he creido necesario.
+
+La sección de servicios contiene un arreglo de cuatro imagenes con sus titulos respectivos.  
+
+Para la sección de contactos, donde hay un formulario, he decidido utilizar una tabla para la 
+colocación de los distintos campos.
+
+
