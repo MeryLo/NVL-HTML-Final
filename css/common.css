@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #3a3a3a;
+}
+
+.pink {
+    color: #e2ace2;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 1280px;
+}
+
+.site-container {
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2em;
+}

@@ -1,0 +1,76 @@
+.header-section {
+    display: flex;
+    height: 13%;
+    min-height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #F5D9F5;
+}
+
+.header-section a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.nav-container {
+    flex: 1;
+    padding-bottom: 6px;
+    font-size: 1em;
+}
+
+ul.menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.menu-item {
+    margin: 0 20px;
+    list-style: none;
+    font-size: 2rem;
+}
+.menu-item a {
+    color: #C67CC6;
+}
+
+.menu-item.selected a {
+  color: #A24EA2;
+}
+
+.menu-item:hover a {
+    color: #A24EA2;
+}
+
+.jumbo {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+
+}
+.jumbo::before {
+    content: '';
+    background: url('../img/love.jpg') no-repeat;
+    background-position: center center;
+    background-size: 73%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.jumbo h1 {
+    font-size: 2.4em;
+    color:#A24EA2;
+}

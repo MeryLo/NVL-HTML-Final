@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog's House | Servicios</title>
+    <link rel="icon" href="img/huella.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacts.css">
+
+</head>
+
+<body>
+    <div class="site-container">
+        <div class="header">
+
+            <div class="header-section">
+                <header class="logo">
+                    <img src="img/logo-small.png" alt="Dog's House Logo">
+                </header>
+
+                <nav class="nav-container">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Nosotros</a></li>
+                        <li class="menu-item"><a href="servicios.html">Servicios</a></li>
+                        <li class="menu-item"><a href="precios.html">Precios</a></li>
+                        <li class="menu-item"><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="jumbo">
+                <h1>Contrata nuestros Servicios</h1>
+            </div>
+        </div>
+        <main class="content">
+            <div id="form">
+                <form name="Form-contrata-servicios" action="procesar.php" method="POST">
+                    <table class="table">
+                        <tr>
+                            <td colspan="2" class="cabecera">Datos del dueño</td>
+                        </tr>
+                        <tr>
+                            <td class="descripcion">Nombre</td>
+                            <td class="valor"><input type="text" name="nombre" placeholder="Nombre del dueño"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Apellidos</td>
+                            <td class="valor"><input type="text" name="apellido" placeholder="Apellido"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Direccion</td>
+                            <td class="valor"><input type="text" name="direccion" placeholder="Direccion"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="descripcion">Telefono</td>
+                            <td class="valor"><input type="tel" name="telefono" placeholder="Telefono"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="cabecera">Datos del animal</td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Nombre</td>
+                            <td class="valor"><input type="text" name="nombreanimal" placeholder="Nombre del animal"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Edad</td>
+                            <td class="valor"><input type="number" name="edad" placeholder="Edad del perro"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Raza</td>
+                            <td class="valor"><input type="text" name="raza" placeholder="Raza"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Recogida</td>
+                            <td class="valor">
+                                <input type="radio" name="recogida" value="si">Si
+                                <input type="radio" name="recogida" value="no">No
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Estancia</td>
+                            <td class="valor">
+                                <select name="estancia">
+                                    <option value="value1">Mes</option>
+                                    <option value="value2" selected>Semana</option>
+                                    <option value="value3">Finde</option>
+                                    <option value="value4">Dia</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Cuidados</td>
+                            <td class="valor">
+                                <input type="checkbox" name="cuidados" value="1">Baño<br />
+                                <input type="checkbox" name="cuidados" value="2">Corte de pelo<br />
+                                <input type="checkbox" name="cuidados" value="3">Limpieza dental<br />
+                                <input type="checkbox" name="cuidados" value="4">Corte de uñas<br />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="descripcion">Adiestramiento</td>
+                            <td class="valor">
+                                <select name="adiestramiento">
+                                    <option value="value1">Basico</option>
+                                    <option value="value2" selected>Avanzado</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="cabecera"><input type="submit" name="contratar" value="Contratar servicios"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </main>
+
+</body>
+
+</html>

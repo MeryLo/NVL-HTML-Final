@@ -1,0 +1,70 @@
+/* Contenido */
+
+
+.content section {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    margin: 3% auto;
+}
+
+.content .flex-cnt {
+    display: flex;
+}
+
+.content section h2 {
+    font-size: 2.4em;
+    margin-bottom: .7em;
+}
+
+.content section p {
+    font-size: 2em;
+    opacity: .8;
+    line-height: 1.2;
+}
+
+.block {
+    display: inline-block;
+    flex: 1;
+    min-height: 200px;
+}
+
+.block:first-child {
+    margin-right: 5%;
+}
+
+.block .paragraph {
+    width: 100%;
+    padding-left: 160px;
+    text-align: justify;
+    position: relative;
+}
+
+.block .paragraph::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.block.mission .paragraph::before {
+    background: url('../img/mission.png') no-repeat;
+    background-size: contain;
+}
+
+.block.vision .paragraph::before {
+    background: url('../img/vision.png') no-repeat;
+    background-size: contain;
+}
+
+.block .flex-cnt {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}

@@ -1,0 +1,77 @@
+.content section {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+    border: 1px solid #F5D9F5;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+
+section h2 {
+    font-size: 2.5em;
+    color: #A24EA2;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+section h2::before {
+    content: '';
+    width: 25px; 
+    height: 25px;
+    vertical-align: middle;
+    line-height: 0;
+    margin-right: 0.5em;
+}
+
+section.pickup h2::before {
+    background: url('../img/truck.png') no-repeat;
+    background-size: 100%;
+}
+section.residence h2::before {
+    background: url('../img/house.png') no-repeat;
+    background-size: 100%;
+}
+section.attendance h2::before {
+    background: url('../img/cuidados.png') no-repeat;
+    background-size: 100%;
+}
+section.training h2::before {
+    background: url('../img/training.png') no-repeat;
+    background-size: 100%;
+}
+
+.prices {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.prices .tag {
+    font-size: 1.7em;
+    color: #ffffff;
+    border-radius: 0.3em;
+    padding: .5em 1em;
+    background: rgb(212, 212, 212);
+    position: relative;
+    width: 10em;
+    max-width: 10em;
+    margin-right: 100px;
+    text-align: center;
+}
+.prices .tag:hover {
+    background: #A24EA2;
+}
+.prices .tag::before {
+    color: #C67CC6;
+    content: attr(data-text) '';
+    position: absolute;
+    left: 0%;
+    bottom: 110%;
+    white-space: nowrap;
+}
